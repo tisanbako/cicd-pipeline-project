@@ -330,7 +330,7 @@ cd /opt/splunk/bin
 
         ![JDKSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%208.59.50%20AM.png)
 
-        * Click on Add installer
+        * Click on Add installer and  cancel the box with install oracle *** 'X' in red (just click it)
         * Select Extract *.zip/*.tar.gz -->> Fill the below values
         * Name: **localJdk**
         * Download URL for binary archive: **https://download.java.net/java/GA/jdk11/13/GPL/openjdk-11.0.1_linux-x64_bin.tar.gz**
