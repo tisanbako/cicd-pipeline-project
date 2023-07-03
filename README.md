@@ -472,7 +472,16 @@ cd /opt/splunk/bin
 - Update The ``Jenkinsfile`` If Neccessary
 - Update `SonarQube IP address` in your `Jenkinsfile`
 - Update the `SonarQube projectKey or name` in your `Jenkinsfile`
-- Update your `Slack Channel Name` in the `Jenkinsfile` 
+- Update your `Slack Channel Name` in the `Jenkinsfile`
+
+### Add git credentials 
+- Dashboard - Manage Jenkins - Credenetials -Add Credentials
+- Kind - username with password
+- Username (your github username)
+- password (type password)
+- ID - Github-credentials
+- Description - put description
+- Create
     
     - Log into Jenkins: http://Jenkins-Public-IP:8080/
     - Click on **New Item**
