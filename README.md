@@ -352,9 +352,9 @@ cd /opt/splunk/bin
       1)  ##### SonarQube secret token (SonarQube-Token)
           - ###### Generating SonarQube secret token:
               - Login to your SonarQube server (http://SonarServer-Sublic-IP:9000, with the credentials username: **admin** & password: **admin**)
-              - Click on create new project (project key & Display name - name it anything)
+              - Click on create a new project (project key & Display name - name it anything)
               - click set up
-              - Enter name for your token, cleck generate, continue
+              - Enter the name for your token, click generate, continue
               - What is your project's main language? - java
               - You are developing primarily in Java: what is your build technology? - maven
               - copy the code below and save it on an editor
@@ -468,9 +468,35 @@ cd /opt/splunk/bin
      - **(OPTIONAL)** Run/Test Your Pipeline Again and This Time Your Quality Gate Should Fail 
      - **(OPTIONAL)** Go back and Update the Quality Gate value to 10. The Exercise was just to see how Quality Gate Works
 
+### Configure pom.xml file
+- In the main repository, where you find Jenkindsopen pom.xml
+- Edit the IP on limes 32 and 36 under <snapshotRepositorty.
+
+### Nexus Configuration
+1)  ### Accessing Nexus: 
+    The nexus service on port 8081. To access the nexus dashboard, visit http://Nexus-Pub-IP:8081. You will be able to see the nexus homepage as shown below.
+    - Default username: ``admin``
+    - Default Password: ```sudo cat /app/sonatype-work/nexus3/admin.password```
+    - NOTE: Once you login, you will be prompted to reset the password
+
+    ### Go ahead and create your Nexus Project Repositories
+    - CREATE 1st REPO: Click on the Gear Icon -->> Repository -->> Create Repository -->> Select `maven2(hosted)` -->> Name: `maven-project-releases` -->> Create Repository
+
+    - CREATE 2nd REPO: Click Create Repository -->> Select `maven2(hosted)` -->> Name: `maven-project-snapshots` -->> Version Policy: Select `Snapshot` -->> Create Repository
+
+    - CREATE 3rd REPO: Click Create Repository -->> Select `maven2(proxy)` -->> Name: `maven-project-central` -->> Remote Storage: provide this link https://repo.maven.apache.org/maven2 -->> Create Repository
+
+    - CREATE 4th REPO: Click Create Repository -->> Select `maven2(group)` -->> Name: `maven-project-group` -->> Version Policy: Select `Mixed` -->> Assign All The Repos You Created to The Group -->> Create Repository
+    - Once you select create repository and select maven2(group)
+
+    ![NexusSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-27%20at%203.42.03%20PM.png) 
+
+
 ### Pipeline creation
 - Update The ``Jenkinsfile`` If Neccessary
 - Update `SonarQube IP address` in your `Jenkinsfile`
+- update with the code credentials you copied from SonarQube ##PIC##
+- Update nexusUrl ##PIC33
 - Update the `SonarQube projectKey or name` in your `Jenkinsfile`
 - Update your `Slack Channel Name` in the `Jenkinsfile`
 
