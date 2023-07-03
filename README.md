@@ -367,7 +367,7 @@ cd /opt/splunk/bin
               ALT ENDS *****
           
           - ###### Store SonarQube Secret token in Jenkins:
-              - Click on ``Add Credentials``
+              - Click on global or any key under domain - ``Add Credentials``
               - Kind: Secret text!! 
               - Secret: Fill the SonarQube token value that we have created on the SonarQube server
               - ID: ``SonarQube-Token``
