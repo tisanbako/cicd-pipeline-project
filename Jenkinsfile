@@ -58,8 +58,8 @@ pipeline {
                 sh """
                 mvn sonar:sonar \
                 -Dsonar.projectKey=CICD \
-                -Dsonar.host.url=http://34.216.173.175:9000 \
-                -Dsonar.login=0874788a7d5e03359e8e92777772956cd4025b4f
+                -Dsonar.host.url=http://3.86.33.229:9000 \
+                -Dsonar.login=5fac74245a2d717c52e8612ff4d88325633cec6d
                 """
                 }
             }
