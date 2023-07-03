@@ -352,10 +352,20 @@ cd /opt/splunk/bin
       1)  ##### SonarQube secret token (SonarQube-Token)
           - ###### Generating SonarQube secret token:
               - Login to your SonarQube server (http://SonarServer-Sublic-IP:9000, with the credentials username: **admin** & password: **admin**)
-              - Click on profile -->> My Account -->> Security -->> Tokens
+              - Click on create new project (project key & Display name - name it anything)
+              - click set up
+              - Enter name for your token, cleck generate, continue
+              - What is your project's main language? - java
+              - You are developing primarily in Java: what is your build technology? - maven
+              - copy the code below and save it on an editor
+                
+	      
+	      (ALT -DIDN'T WORK) Click on profile -->> My Account -->> Security -->> Tokens
               - Generate Tokens: Fill ``SonarQube-Token``
               - Click on **Generate**
-              - Copy the token 
+              - Copy the token
+              ALT ENDS *****
+          
           - ###### Store SonarQube Secret token in Jenkins:
               - Click on ``Add Credentials``
               - Kind: Secret text!! 
@@ -364,7 +374,7 @@ cd /opt/splunk/bin
               - Description: SonarQube-Token
               - Click on Create
 
-      2)  ##### Slack secret token (slack-token)
+      3)  ##### Slack secret token (slack-token)
           - Click on ``Add Credentials``
           - Kind: Secret text            
           - Secret: Place the Integration Token Credential ID (Note: Generate for slack setup)
@@ -372,7 +382,7 @@ cd /opt/splunk/bin
           - Description: slack-token
           - Click on Create  
 
-      3)  ##### Nexus Credentials (Username and Password)
+      4)  ##### Nexus Credentials (Username and Password)
           - ###### Login to Nexus and Set Password
               - Access Nexus: http://Nexus-Pub-IP:8081/
 	          - Default Username: admin
@@ -391,7 +401,7 @@ cd /opt/splunk/bin
 	          - Description: nexus-credential
 	          - Click on Create   
 
-      4)  ##### Ansible deployment server credential (username & password)
+      5)  ##### Ansible deployment server credential (username & password)
           - Click on ``Add Credentials``
           - Kind: Username with password          
           - Username: ``ansibleadmin``
