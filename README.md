@@ -141,8 +141,8 @@
       - Prod-EnvPublicIPaddress:9100   (Confirm this page is accessible)
   - Exit
 
-### Configure The "Node Exporter" on the "Jenkins-Maven-Ansible", "Nexus" and "SonarQube" instances 
-  - Login/SSH into the "Jenkins-Maven-Ansible", "Nexus" and "SonarQube" VM instance
+### Configure The "Node Exporter" on the "Jenkins-Maven-Ansible", "Nexus" "splunk" and "SonarQube" instances 
+  - Login/SSH into the "Jenkins-Maven-Ansible", "Nexus" "Splunk" and "SonarQube" VM instance
   - Perform the following operations on all of them
   - Install git by running: sudo yum install git -y    (The SonarQube server already has git)
   - Clone the following repository: https://github.com/awanmbandi/realworld-cicd-pipeline-project.git
