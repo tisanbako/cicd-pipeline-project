@@ -107,7 +107,7 @@
 ### Configure Promitheus
   - Login/SSH to your Prometheus Server
   - Clone the following repository: https://github.com/awanmbandi/realworld-cicd-pipeline-project.git
-  - Or just clone the prometheus-and-grafana branch (git clone -b prometheus-and-grafana-install https://github.com/awanmbandi/realworld-cicd-          pipeline-project.git) then run 5,6,7
+  - Or just clone the prometheus-and-grafana branch (git clone -b prometheus-and-grafana-install https://github.com/awanmbandi/realworld-cicd-pipeline-project.git) then run 5,6,7
   - Change directory to "realworld-cicd-pipeline-project"
   - Swtitch to the "prometheus-and-grafana" git branch  
   5- Run: ./install-prometheus.sh
