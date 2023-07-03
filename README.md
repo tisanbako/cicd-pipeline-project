@@ -415,6 +415,10 @@ cd /opt/splunk/bin
 5)  #### Configure system:    
     1)  - Click on ``Manage Jenkins`` -->> ``Configure System`` 
         - `SonarQube Servers`
+        - server URL : (your sonarqube publicip:9000
+        - server Authentication
+          -  Sonarqube credential
+          -  Sonarqube-Token
         ![SonarQubeServerSetup!](https://github.com/awanmbandi/realworld-cicd-pipeline-project/raw/zdocs/images/Screen%20Shot%202023-04-24%20at%2010.13.39%20AM.png)
 
     2)  - Click on Manage Jenkins -->> Configure System
