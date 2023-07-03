@@ -117,12 +117,13 @@
 ### Configure Grafana
   - Login/SSH to your Grafana Server
   - Clone the following repository: https://github.com/awanmbandi/realworld-cicd-pipeline-project.git
+  - - Or just clone the prometheus-and-grafana branch (git clone -b prometheus-and-grafana-install https://github.com/awanmbandi/realworld-cicd-pipeline-project.git) then run 5,6,7
   - Change directory to "realworld-cicd-pipeline-project"
   - Swtitch to the "prometheus-and-grafana" git branch 
-  - Run: ls or ll  (to confirm you have the branch files)
-  - Run: ./install-grafana.sh
-  - Confirm the status shows "Active (running)"
-  - Exit
+  - 5 Run: ls or ll  (to confirm you have the branch files)
+  - 6 Run: ./install-grafana.sh
+  - 7 Confirm the status shows "Active (running)"
+  - 8 Exit
 
 ### Configure The "Node Exporter" accross the "Dev", "Stage" and "Prod" instances including your "Pipeline Infra"
   - Login/SSH into the "Dev-Env", "Stage-Env" and "Prod-Env" VM instance
