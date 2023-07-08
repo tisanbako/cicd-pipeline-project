@@ -415,6 +415,7 @@ cd /opt/splunk/bin
 5)  #### Configure system:    
     1)  - Click on ``Manage Jenkins`` -->> ``Configure System`` 
         - `SonarQube Servers`
+        - Name: SonarQube
         - server URL : (your sonarqube publicip:9000
         - server Authentication
           -  Sonarqube credential
