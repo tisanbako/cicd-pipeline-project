@@ -59,8 +59,7 @@ pipeline {
                 mvn sonar:sonar \
                 -Dsonar.projectKey=CICD \
                 -Dsonar.host.url=http://52.90.174.179:9000 \
-                -Dsonar.login=fe6850fda4a96c3cfaa431f54828eaf77b8ceff0
-
+                -Dsonar.login=fe6850fda4a96c3cfaa431f54828eaf77b8ceff
                 """
                 }
             }
@@ -71,7 +70,7 @@ pipeline {
            nexusArtifactUploader(
               nexusVersion: 'nexus3',
               protocol: 'http',
-              nexusUrl: '34.226.136.226:8081/',
+              nexusUrl: '54.144.187.124:8081/',
               groupId: 'webapp',
               version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
               repository: 'maven-project-releases',  //"${NEXUS_REPOSITORY}",
