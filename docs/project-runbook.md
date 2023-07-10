@@ -1,4 +1,4 @@
-###### Project ToolBox 🧰
+###### Project ToolBox 🧰.
 - [Git](https://git-scm.com/) Git will be used to manage our application source code.
 - [Github](https://github.com/) Github is a free and open source distributed VCS designed to handle everything from small to very large projects with speed and efficiency
 - [Jenkins](https://www.jenkins.io/) Jenkins is an open source automation CI tool which enables developers around the world to reliably build, test, and deploy their software
