@@ -97,7 +97,7 @@
     #### NOTE: Update Your Jenkins file with your Slack Channel Name
     - Go back to your local, open your "Jenkins-CICD-Project" repo/folder/directory on VSCODE
     - Open your "Jenkinsfile"
-    - Update the slack channel name on line "97" (there about)
+    - Update the slack channel name on line "126" (there about)
     - Change name from "cicd-project-alerts" (or whatever name thst's there) to yours
     - Add the changes to git, commit and push to GitHub
     - Confirm the changes are available on GitHub
